@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubaruBRZSimul", "SubaruBRZSimul.csproj", "{0288BF0F-AB6F-4BE5-8DE1-9700E6CFE3FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{3632DDF3-BE2A-41AE-89FF-2943A588C64D}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0288BF0F-AB6F-4BE5-8DE1-9700E6CFE3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0288BF0F-AB6F-4BE5-8DE1-9700E6CFE3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0288BF0F-AB6F-4BE5-8DE1-9700E6CFE3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0288BF0F-AB6F-4BE5-8DE1-9700E6CFE3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11A48B54-1557-4268-94E5-FB79E84DE68C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\down.png" />
+    <None Remove="Resources\down1.png" />
+    <None Remove="Resources\percent.png" />
+    <None Remove="Resources\percent64x64.png" />
+    <None Remove="Resources\TeeChartWhite190x44.png" />
+    <None Remove="Resources\TeeChartWhite300x70.png" />
+    <None Remove="Resources\up.png" />
+    <None Remove="Resources\up1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\down.png" />
+    <EmbeddedResource Include="Resources\down1.png" />
+    <EmbeddedResource Include="Resources\percent.png" />
+    <EmbeddedResource Include="Resources\percent64x64.png" />
+    <EmbeddedResource Include="Resources\TeeChartWhite190x44.png" />
+    <EmbeddedResource Include="Resources\TeeChartWhite300x70.png" />
+    <EmbeddedResource Include="Resources\up.png" />
+    <EmbeddedResource Include="Resources\up1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Steema.TeeChart.NETCore.WinForm.Business" Version="4.2019.6.4" />
+  </ItemGroup>
+
+</Project>

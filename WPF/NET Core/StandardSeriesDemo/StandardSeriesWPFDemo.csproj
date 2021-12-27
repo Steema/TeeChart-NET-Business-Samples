@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\bed.png" />
+    <None Remove="Resources\bus.png" />
+    <None Remove="Resources\knifefork.png" />
+    <None Remove="Resources\label.png" />
+    <None Remove="Resources\smalltile-sdk.png" />
+    <None Remove="Resources\splash-sdk.png" />
+    <None Remove="Resources\splash.png" />
+    <None Remove="Resources\splash2.png" />
+    <None Remove="Resources\squaretile-sdk.png" />
+    <None Remove="Resources\TeeLogo.png" />
+    <None Remove="Resources\worldimage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Steema.TeeChart.NETCore.WPF.Business" Version="4.2019.6.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="..\..\WinForm\StandardSeriesDemo\Resources\down.png" Link="Resources\down.png" />
+    <Resource Include="..\..\WinForm\StandardSeriesDemo\Resources\down1.png" Link="Resources\down1.png" />
+    <Resource Include="..\..\WinForm\StandardSeriesDemo\Resources\percent.png" Link="Resources\percent.png" />
+    <Resource Include="..\..\WinForm\StandardSeriesDemo\Resources\percent64x64.png" Link="Resources\percent64x64.png" />
+    <Resource Include="..\..\WinForm\StandardSeriesDemo\Resources\TeeChartWhite190x44.png" Link="Resources\TeeChartWhite190x44.png" />
+    <Resource Include="..\..\WinForm\StandardSeriesDemo\Resources\TeeChartWhite300x70.png" Link="Resources\TeeChartWhite300x70.png" />
+    <Resource Include="..\..\WinForm\StandardSeriesDemo\Resources\up.png" Link="Resources\up.png" />
+    <Resource Include="..\..\WinForm\StandardSeriesDemo\Resources\up1.png" Link="Resources\up1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\bed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\bus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\knifefork.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\label.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\smalltile-sdk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\splash-sdk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\splash.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\splash2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\squaretile-sdk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\TeeLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\worldimage.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
