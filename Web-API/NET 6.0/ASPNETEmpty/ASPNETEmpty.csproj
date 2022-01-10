@@ -15,7 +15,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Steema.TeeChart.NET.Business" Version="5.2021.12.20" />
+    <PackageReference Include="Steema.TeeChart.NET.Business" Version="5.2022.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TeeChart.Business">
+      <HintPath>..\..\..\..\..\..\.nuget\packages\steema.teechart.net.business\5.2021.12.20\lib\net5.0\TeeChart.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="TeeChart.Business.Server">
+      <HintPath>..\..\..\..\..\..\.nuget\packages\steema.teechart.net.business\5.2021.12.20\lib\net5.0\TeeChart.Business.Server.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
