@@ -43,14 +43,17 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="TeeChart.Business, Version=4.2021.6.21, Culture=neutral, PublicKeyToken=7d79220c74c907b6, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Steema.TeeChart.NET.Business.5.2021.6.21\lib\net40\TeeChart.Business.dll</HintPath>
-    </Reference>
-    <Reference Include="TeeChart.Business.WPF, Version=4.2021.6.21, Culture=neutral, PublicKeyToken=7d79220c74c907b6, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Steema.TeeChart.NET.Business.5.2021.6.21\lib\net40\TeeChart.Business.WPF.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="TeeChart.Business, Version=4.2022.2.11, Culture=neutral, PublicKeyToken=7d79220c74c907b6, processorArchitecture=MSIL">
+      <HintPath>packages\Steema.TeeChart.NET.Business.5.2022.2.11\lib\net40\TeeChart.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="TeeChart.Business.WPF, Version=4.2022.2.11, Culture=neutral, PublicKeyToken=7d79220c74c907b6, processorArchitecture=MSIL">
+      <HintPath>packages\Steema.TeeChart.NET.Business.5.2022.2.11\lib\net40\TeeChart.Business.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="TeeChart.Business.Xaml.WPF, Version=4.2022.2.11, Culture=neutral, PublicKeyToken=b971c9f8a389fbeb, processorArchitecture=MSIL">
+      <HintPath>packages\Steema.TeeChart.NET.Business.5.2022.2.11\lib\net40\TeeChart.Business.Xaml.WPF.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -194,66 +197,67 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\WindowsForms\Resources\down.png">
-      <Link>Resources\down.png</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="..\WindowsForms\Resources\down1.png">
-      <Link>Resources\down1.png</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="..\WindowsForms\Resources\percent.png">
-      <Link>Resources\percent.png</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="..\WindowsForms\Resources\percent64x64.png">
-      <Link>Resources\percent64x64.png</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="..\WindowsForms\Resources\TeeChartWhite190x44.png">
-      <Link>Resources\TeeChartWhite190x44.png</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="..\WindowsForms\Resources\TeeChartWhite300x70.png">
-      <Link>Resources\TeeChartWhite300x70.png</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="..\WindowsForms\Resources\up.png">
-      <Link>Resources\up.png</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="..\WindowsForms\Resources\up1.png">
-      <Link>Resources\up1.png</Link>
+    <Resource Include="Resources\bed.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\UniversalWindowsPlatform\Assets\worldimage.png">
-      <Link>Resources\worldimage.png</Link>
+    <Resource Include="Resources\bus.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\UniversalWindowsPlatform\Assets\label.png">
-      <Link>Resources\label.png</Link>
+    <Resource Include="Resources\knifefork.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\UniversalWindowsPlatform\Assets\knifefork.png">
-      <Link>Resources\knifefork.png</Link>
+    <Resource Include="Resources\label.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\UniversalWindowsPlatform\Assets\bus.png">
-      <Link>Resources\bus.png</Link>
+    <Resource Include="Resources\worldimage.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\UniversalWindowsPlatform\Assets\bed.png">
-      <Link>Resources\bed.png</Link>
+    <Resource Include="Resources\down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\down1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\percent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\percent64x64.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TeeChartWhite190x44.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TeeChartWhite300x70.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\up.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\up1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
