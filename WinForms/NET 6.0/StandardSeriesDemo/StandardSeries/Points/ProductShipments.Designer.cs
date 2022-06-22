@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.Points
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.Points
 {
     partial class ProductShipments
     {
@@ -179,7 +181,7 @@
       // 
       // 
       // 
-      this.tChart1.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart1.Header.Alignment = StringAlignment.Near;
       // 
       // 
       // 
@@ -225,7 +227,7 @@
       // 
       this.tChart1.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
       this.tChart1.Panel.Bevel.Width = 2;
-      this.tChart1.Panel.BevelWidth = 2;
+      //this.tChart1.Panel.BevelWidth = 2;
       // 
       // 
       // 

@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.Bars
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.Bars
 {
     partial class ServerStatus
     {
@@ -137,7 +139,7 @@
       // 
       // 
       // 
-      this.horizBar1.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+      this.horizBar1.Brush.Gradient.Direction = LinearGradientMode.Vertical;
       this.horizBar1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
       this.horizBar1.ColorEach = false;
       // 
@@ -171,7 +173,7 @@
       // 
       // 
       // 
-      this.horizBar2.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+      this.horizBar2.Brush.Gradient.Direction = LinearGradientMode.Vertical;
       this.horizBar2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(53)))));
       this.horizBar2.ColorEach = true;
       // 
@@ -389,7 +391,7 @@
       // 
       // 
       // 
-      this.tChart3.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart3.Header.Alignment = StringAlignment.Near;
       // 
       // 
       // 
@@ -460,7 +462,7 @@
       // 
       // 
       // 
-      this.horizBar3.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+      this.horizBar3.Brush.Gradient.Direction = LinearGradientMode.Vertical;
       this.horizBar3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(92)))), ((int)(((byte)(5)))));
       this.horizBar3.ColorEach = false;
       // 
@@ -494,7 +496,7 @@
       // 
       // 
       // 
-      this.horizBar4.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+      this.horizBar4.Brush.Gradient.Direction = LinearGradientMode.Vertical;
       this.horizBar4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(172)))), ((int)(((byte)(0)))));
       this.horizBar4.ColorEach = false;
       // 
@@ -528,7 +530,7 @@
       // 
       // 
       // 
-      this.horizBar5.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+      this.horizBar5.Brush.Gradient.Direction = LinearGradientMode.Vertical;
       this.horizBar5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(197)))), ((int)(((byte)(184)))));
       this.horizBar5.ColorEach = false;
       // 

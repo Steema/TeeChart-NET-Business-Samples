@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.Miscellaneous
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.Miscellaneous
 {
     partial class StartForm
     {
@@ -115,7 +117,7 @@
       // 
       // 
       // 
-      this.tChart7.Footer.Alignment = System.Drawing.StringAlignment.Far;
+      this.tChart7.Footer.Alignment = StringAlignment.Far;
       // 
       // 
       // 
@@ -126,7 +128,7 @@
       // 
       // 
       // 
-      this.tChart7.Header.Alignment = System.Drawing.StringAlignment.Far;
+      this.tChart7.Header.Alignment = StringAlignment.Far;
       // 
       // 
       // 
@@ -224,8 +226,8 @@
       // 
       // 
       // 
-      this.tChart1.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-      this.tChart1.Aspect.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+      //this.tChart1.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+      //this.tChart1.Aspect.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
       this.tChart1.Aspect.View3D = false;
       // 
       // 
@@ -236,7 +238,7 @@
       // 
       // 
       // 
-      this.tChart1.Footer.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart1.Footer.Alignment = StringAlignment.Near;
       this.tChart1.Footer.Bottom = 0;
       this.tChart1.Footer.CustomPosition = true;
       // 
@@ -252,7 +254,7 @@
       // 
       // 
       // 
-      this.tChart1.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart1.Header.Alignment = StringAlignment.Near;
       this.tChart1.Header.Bottom = 59;
       this.tChart1.Header.CustomPosition = true;
       // 
@@ -330,7 +332,7 @@
       // 
       // 
       // 
-      this.tChart3.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+      //this.tChart3.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
       this.tChart3.Aspect.View3D = false;
       // 
       // 
@@ -391,7 +393,7 @@
       // 
       // 
       // 
-      this.tChart3.Footer.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart3.Footer.Alignment = StringAlignment.Near;
       // 
       // 
       // 
@@ -402,7 +404,7 @@
       // 
       // 
       // 
-      this.tChart3.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart3.Header.Alignment = StringAlignment.Near;
       this.tChart3.Header.Bottom = 59;
       this.tChart3.Header.CustomPosition = true;
       // 
@@ -1006,7 +1008,7 @@
       this.circularGauge1.RedLine.Visible = true;
       this.circularGauge1.RedLineEndValue = 100D;
       this.circularGauge1.RedLineStartValue = 80D;
-      this.circularGauge1.ShowInLegend = false;
+      this.circularGauge1.Legend.Visible = false;
       // 
       // 
       // 
@@ -1058,7 +1060,7 @@
       // 
       // 
       // 
-      this.tChart8.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+      //this.tChart8.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
       this.tChart8.Aspect.View3D = false;
       // 
       // 
@@ -1074,7 +1076,7 @@
       // 
       // 
       this.tChart8.Axes.Bottom.Grid.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-      this.tChart8.Axes.Bottom.Grid.Style = System.Drawing.Drawing2D.DashStyle.Solid;
+      this.tChart8.Axes.Bottom.Grid.Style = DashStyle.Solid;
       // 
       // 
       // 
@@ -1104,7 +1106,7 @@
       // 
       // 
       this.tChart8.Axes.Left.Grid.Color = System.Drawing.Color.White;
-      this.tChart8.Axes.Left.Grid.Style = System.Drawing.Drawing2D.DashStyle.Solid;
+      this.tChart8.Axes.Left.Grid.Style = DashStyle.Solid;
       // 
       // 
       // 
@@ -1150,7 +1152,7 @@
       // 
       // 
       // 
-      this.tChart8.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart8.Header.Alignment = StringAlignment.Near;
       // 
       // 
       // 
@@ -1229,7 +1231,7 @@
       // 
       // 
       // 
-      this.bubble1.Pointer.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+      this.bubble1.Pointer.Brush.Gradient.Direction = LinearGradientMode.Horizontal;
       this.bubble1.Pointer.Brush.Gradient.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(0)))));
       this.bubble1.Pointer.Brush.Gradient.Visible = true;
       this.bubble1.Pointer.HorizSize = 28;
@@ -1445,7 +1447,7 @@
       this.tChart4.Aspect.Perspective = 0;
       this.tChart4.Aspect.Rotation = 360;
       this.tChart4.Aspect.RotationFloat = 360D;
-      this.tChart4.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+      //this.tChart4.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
       this.tChart4.Aspect.View3D = false;
       // 
       // 
@@ -1494,7 +1496,7 @@
       // 
       // 
       // 
-      this.tChart4.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart4.Header.Alignment = StringAlignment.Near;
       // 
       // 
       // 
@@ -1659,8 +1661,8 @@
       // 
       // 
       // 
-      this.tChart6.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-      this.tChart6.Aspect.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+      //this.tChart6.Aspect.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+      //this.tChart6.Aspect.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
       this.tChart6.Aspect.View3D = false;
       // 
       // 
@@ -1712,7 +1714,7 @@
       // 
       // 
       // 
-      this.tChart6.Header.Alignment = System.Drawing.StringAlignment.Far;
+      this.tChart6.Header.Alignment = StringAlignment.Far;
       // 
       // 
       // 

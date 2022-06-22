@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.PieAndDonut
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.PieAndDonut
 {
     partial class PiesSalesFigures
     {
@@ -223,7 +225,7 @@
       // 
       // 
       // 
-      this.tChart3.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart3.Header.Alignment = StringAlignment.Near;
       // 
       // 
       // 
@@ -274,7 +276,7 @@
       // 
       this.tChart3.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
       this.tChart3.Panel.Bevel.Width = 2;
-      this.tChart3.Panel.BevelWidth = 2;
+      //this.tChart3.Panel.BevelWidth = 2;
       // 
       // 
       // 
@@ -282,7 +284,7 @@
       // 
       // 
       // 
-      this.tChart3.Panel.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+      this.tChart3.Panel.Brush.Gradient.Direction = LinearGradientMode.ForwardDiagonal;
       this.tChart3.Panel.Brush.Gradient.EndColor = System.Drawing.Color.White;
       this.tChart3.Panel.Brush.Gradient.StartColor = System.Drawing.Color.Silver;
       this.tChart3.Panel.Brush.Gradient.Visible = false;
@@ -472,7 +474,7 @@
       this.numericGauge2.RedLine.Visible = true;
       this.numericGauge2.RedLineEndValue = 0D;
       this.numericGauge2.RedLineStartValue = 0D;
-      this.numericGauge2.ShowInLegend = false;
+      this.numericGauge2.Legend.Visible = false;
       // 
       // 
       // 
@@ -691,7 +693,7 @@
       // 
       // 
       // 
-      this.tChart2.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart2.Header.Alignment = StringAlignment.Near;
       // 
       // 
       // 
@@ -742,7 +744,7 @@
       // 
       this.tChart2.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
       this.tChart2.Panel.Bevel.Width = 2;
-      this.tChart2.Panel.BevelWidth = 2;
+      //this.tChart2.Panel.BevelWidth = 2;
       // 
       // 
       // 
@@ -750,7 +752,7 @@
       // 
       // 
       // 
-      this.tChart2.Panel.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+      this.tChart2.Panel.Brush.Gradient.Direction = LinearGradientMode.ForwardDiagonal;
       this.tChart2.Panel.Brush.Gradient.EndColor = System.Drawing.Color.White;
       this.tChart2.Panel.Brush.Gradient.StartColor = System.Drawing.Color.Silver;
       this.tChart2.Panel.Brush.Gradient.Visible = false;
@@ -922,7 +924,7 @@
       this.numericGauge1.MinorTicks.Spiralled = false;
       this.numericGauge1.MinorTicks.VertSize = 1;
       this.numericGauge1.MinorTicks.Visible = true;
-      this.numericGauge1.OriginalCursor = System.Windows.Forms.Cursors.Default;
+      this.numericGauge1.OriginalCursor = Cursors.Default;
       this.numericGauge1.RecalcOptions = ((Steema.TeeChart.Styles.RecalcOptions)((((Steema.TeeChart.Styles.RecalcOptions.OnDelete | Steema.TeeChart.Styles.RecalcOptions.OnModify) 
             | Steema.TeeChart.Styles.RecalcOptions.OnInsert) 
             | Steema.TeeChart.Styles.RecalcOptions.OnClear)));
@@ -945,7 +947,7 @@
       this.numericGauge1.RedLine.Visible = true;
       this.numericGauge1.RedLineEndValue = 0D;
       this.numericGauge1.RedLineStartValue = 0D;
-      this.numericGauge1.ShowInLegend = false;
+      this.numericGauge1.Legend.Visible = false;
       // 
       // 
       // 
@@ -1212,7 +1214,7 @@
       // 
       this.tChart1.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
       this.tChart1.Panel.Bevel.Width = 2;
-      this.tChart1.Panel.BevelWidth = 2;
+      //this.tChart1.Panel.BevelWidth = 2;
       // 
       // 
       // 
@@ -1220,13 +1222,13 @@
       // 
       // 
       // 
-      this.tChart1.Panel.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+      this.tChart1.Panel.Brush.Gradient.Direction = LinearGradientMode.ForwardDiagonal;
       this.tChart1.Panel.Brush.Gradient.EndColor = System.Drawing.Color.White;
       this.tChart1.Panel.Brush.Gradient.StartColor = System.Drawing.Color.Silver;
       this.tChart1.Panel.Brush.Gradient.Visible = false;
-      this.tChart1.Panel.Brush.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-      this.tChart1.Panel.Brush.Style = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
-      this.tChart1.Panel.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+      this.tChart1.Panel.Brush.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image")));
+      this.tChart1.Panel.Brush.Style = HatchStyle.BackwardDiagonal;
+      this.tChart1.Panel.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image1")));
       this.tChart1.Panel.MarginRight = 18D;
       this.tChart1.Series.Add(this.pie1);
       this.tChart1.Size = new System.Drawing.Size(1134, 720);

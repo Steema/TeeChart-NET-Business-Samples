@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.Bubbles
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.Bubbles
 {
     partial class PopularLanguages
     {
@@ -42,7 +44,7 @@
       // 
       // 
       // 
-      this.tChart1.Footer.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart1.Footer.Alignment = StringAlignment.Near;
       // 
       // 
       // 

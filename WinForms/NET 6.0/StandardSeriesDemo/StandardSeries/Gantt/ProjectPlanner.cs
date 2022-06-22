@@ -77,7 +77,7 @@ namespace StandardSeriesDemo.StandardSeries.Gantt
 
     int counter = 0;
 
-    private void tChart1_AfterDraw(object sender, Steema.TeeChart.Drawing.Graphics3D g)
+    private void tChart1_AfterDraw(object sender, Steema.TeeChart.Drawing.IGraphics3D g)
     {
       g.TextOut(10, 10, counter.ToString());
     }

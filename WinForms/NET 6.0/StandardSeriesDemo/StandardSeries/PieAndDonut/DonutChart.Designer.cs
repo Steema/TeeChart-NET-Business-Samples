@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.PieAndDonut
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.PieAndDonut
 {
     partial class DonutChart
     {
@@ -61,7 +63,7 @@
       // 
       // 
       // 
-      this.tChart1.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart1.Header.Alignment = StringAlignment.Near;
       // 
       // 
       // 

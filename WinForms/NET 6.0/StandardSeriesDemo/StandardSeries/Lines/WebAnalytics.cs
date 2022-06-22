@@ -87,7 +87,7 @@ namespace StandardSeriesDemo.StandardSeries.Lines
         }
 
         int posRepainted = 0;
-        private void tChart4_AfterDraw(object sender, Steema.TeeChart.Drawing.Graphics3D g)
+        private void tChart4_AfterDraw(object sender, Steema.TeeChart.Drawing.IGraphics3D g)
         {
           if (posRepainted == 0)
           {

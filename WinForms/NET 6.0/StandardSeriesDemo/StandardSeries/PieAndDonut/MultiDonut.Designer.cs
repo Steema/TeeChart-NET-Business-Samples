@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.PieAndDonut
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.PieAndDonut
 {
     partial class MultiDonut
     {
@@ -143,10 +145,10 @@
       // 
       this.tChart4.Panel.Brush.Gradient.EndColor = System.Drawing.Color.White;
       this.tChart4.Panel.Brush.Gradient.Visible = false;
-      this.tChart4.Panel.Brush.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+      this.tChart4.Panel.Brush.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image")));
       this.tChart4.Panel.Brush.ImageMode = Steema.TeeChart.Drawing.ImageMode.Center;
-      this.tChart4.Panel.Brush.Style = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
-      this.tChart4.Panel.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+      this.tChart4.Panel.Brush.Style = HatchStyle.BackwardDiagonal;
+      this.tChart4.Panel.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image1")));
       this.tChart4.Panel.ImageMode = Steema.TeeChart.Drawing.ImageMode.Center;
       this.tChart4.Panel.MarginBottom = 2D;
       this.tChart4.Series.Add(this.donut4);
@@ -310,10 +312,10 @@
       // 
       this.tChart3.Panel.Brush.Gradient.EndColor = System.Drawing.Color.White;
       this.tChart3.Panel.Brush.Gradient.Visible = false;
-      this.tChart3.Panel.Brush.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+      this.tChart3.Panel.Brush.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image2")));
       this.tChart3.Panel.Brush.ImageMode = Steema.TeeChart.Drawing.ImageMode.Center;
-      this.tChart3.Panel.Brush.Style = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
-      this.tChart3.Panel.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+      this.tChart3.Panel.Brush.Style = HatchStyle.BackwardDiagonal;
+      this.tChart3.Panel.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image3")));
       this.tChart3.Panel.ImageMode = Steema.TeeChart.Drawing.ImageMode.Center;
       this.tChart3.Panel.MarginBottom = 2D;
       this.tChart3.Series.Add(this.donut3);
@@ -477,10 +479,10 @@
       // 
       this.tChart2.Panel.Brush.Gradient.EndColor = System.Drawing.Color.White;
       this.tChart2.Panel.Brush.Gradient.Visible = false;
-      this.tChart2.Panel.Brush.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+      this.tChart2.Panel.Brush.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image4")));
       this.tChart2.Panel.Brush.ImageMode = Steema.TeeChart.Drawing.ImageMode.Center;
-      this.tChart2.Panel.Brush.Style = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
-      this.tChart2.Panel.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+      this.tChart2.Panel.Brush.Style = HatchStyle.BackwardDiagonal;
+      this.tChart2.Panel.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image5")));
       this.tChart2.Panel.ImageMode = Steema.TeeChart.Drawing.ImageMode.Center;
       this.tChart2.Panel.MarginBottom = 2D;
       this.tChart2.Series.Add(this.donut2);
@@ -645,10 +647,10 @@
       // 
       this.tChart1.Panel.Brush.Gradient.EndColor = System.Drawing.Color.White;
       this.tChart1.Panel.Brush.Gradient.Visible = false;
-      this.tChart1.Panel.Brush.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+      this.tChart1.Panel.Brush.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image6")));
       this.tChart1.Panel.Brush.ImageMode = Steema.TeeChart.Drawing.ImageMode.Center;
-      this.tChart1.Panel.Brush.Style = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
-      this.tChart1.Panel.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+      this.tChart1.Panel.Brush.Style = HatchStyle.BackwardDiagonal;
+      this.tChart1.Panel.Image = new TImage((System.Drawing.Bitmap)(resources.GetObject("resource.Image7")));
       this.tChart1.Panel.ImageMode = Steema.TeeChart.Drawing.ImageMode.Center;
       this.tChart1.Panel.MarginBottom = 2D;
       this.tChart1.Series.Add(this.donut1);
@@ -905,7 +907,7 @@
       // 
       // 
       // 
-      this.horizBar1.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+      this.horizBar1.Brush.Gradient.Direction = LinearGradientMode.Vertical;
       this.horizBar1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(234)))), ((int)(((byte)(141)))));
       this.horizBar1.ColorEach = false;
       // 

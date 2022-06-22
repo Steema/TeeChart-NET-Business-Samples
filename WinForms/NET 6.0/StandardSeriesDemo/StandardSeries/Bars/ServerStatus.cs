@@ -40,7 +40,7 @@ namespace StandardSeriesDemo.StandardSeries.Bars
           calendar1.Sunday.Font.Color = Color.Black;
         }
 
-        private void tChart1_AfterDraw(object sender, Steema.TeeChart.Drawing.Graphics3D g)
+        private void tChart1_AfterDraw(object sender, Steema.TeeChart.Drawing.IGraphics3D g)
         {
           tChart1.Graphics3D.TextOut(tChart1.Axes.Bottom.CalcPosValue(0), horizBar1.CalcYPos(5) - 16, "Memory Usage");
           tChart1.Graphics3D.TextOut(tChart1.Axes.Bottom.CalcPosValue(0), horizBar1.CalcYPos(4) - 16, "CPU usage");

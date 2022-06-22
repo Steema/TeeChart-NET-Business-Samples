@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.Lines
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.Lines
 {
     partial class WebAnalytics
     {
@@ -361,7 +363,7 @@
       this.annotation3.Callout.XPosition = 0;
       this.annotation3.Callout.YPosition = 0;
       this.annotation3.Callout.ZPosition = 0;
-      this.annotation3.Cursor = System.Windows.Forms.Cursors.Default;
+      this.annotation3.Cursor = Cursors.Default;
       this.annotation3.Position = Steema.TeeChart.Tools.AnnotationPositions.Center;
       // 
       // 
@@ -670,7 +672,7 @@
       this.annotation2.Callout.XPosition = 0;
       this.annotation2.Callout.YPosition = 0;
       this.annotation2.Callout.ZPosition = 0;
-      this.annotation2.Cursor = System.Windows.Forms.Cursors.Default;
+      this.annotation2.Cursor = Cursors.Default;
       this.annotation2.Position = Steema.TeeChart.Tools.AnnotationPositions.Center;
       // 
       // 
@@ -1385,7 +1387,7 @@
       this.annotation1.Callout.XPosition = 0;
       this.annotation1.Callout.YPosition = 0;
       this.annotation1.Callout.ZPosition = 0;
-      this.annotation1.Cursor = System.Windows.Forms.Cursors.Default;
+      this.annotation1.Cursor = Cursors.Default;
       this.annotation1.Position = Steema.TeeChart.Tools.AnnotationPositions.Center;
       // 
       // 

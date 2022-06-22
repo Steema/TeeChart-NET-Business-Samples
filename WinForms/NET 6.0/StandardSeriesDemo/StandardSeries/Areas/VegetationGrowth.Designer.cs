@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.Areas
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.Areas
 {
     partial class VegetationGrowth
     {
@@ -166,7 +168,7 @@
       // 
       // 
       // 
-      this.tChart1.Header.Alignment = System.Drawing.StringAlignment.Near;
+      this.tChart1.Header.Alignment = StringAlignment.Near;
       // 
       // 
       // 
@@ -213,7 +215,6 @@
       // 
       this.tChart1.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
       this.tChart1.Panel.Bevel.Width = 2;
-      this.tChart1.Panel.BevelWidth = 2;
       // 
       // 
       // 

@@ -54,7 +54,7 @@ namespace StandardSeriesDemo.StandardSeries.Points
             
             tChart1.Header.Font.Size = 16;
             tChart1.SubHeader.Font.Size = 10;
-            tChart1.SubHeader.Alignment = StringAlignment.Near;
+            tChart1.SubHeader.Alignment = Steema.TeeChart.Drawing.StringAlignment.Near;
         }
 
         private void tChart1_DoubleClick(object sender, EventArgs e)

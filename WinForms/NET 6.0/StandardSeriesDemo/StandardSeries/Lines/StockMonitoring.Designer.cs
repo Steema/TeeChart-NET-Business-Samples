@@ -1,4 +1,6 @@
-﻿namespace StandardSeriesDemo.StandardSeries.Lines
+﻿using Steema.TeeChart.Drawing;
+
+namespace StandardSeriesDemo.StandardSeries.Lines
 {
     partial class StockMonitoring
     {
@@ -278,7 +280,7 @@
       // 
       this.tChart1.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
       this.tChart1.Panel.Bevel.Width = 2;
-      this.tChart1.Panel.BevelWidth = 2;
+      //this.tChart1.Panel.BevelWidth = 2;
       // 
       // 
       // 
@@ -286,7 +288,7 @@
       // 
       // 
       // 
-      this.tChart1.Panel.Brush.Gradient.Direction = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+      this.tChart1.Panel.Brush.Gradient.Direction = LinearGradientMode.ForwardDiagonal;
       this.tChart1.Panel.Brush.Gradient.EndColor = System.Drawing.Color.White;
       this.tChart1.Series.Add(this.line1);
       this.tChart1.Series.Add(this.line2);
