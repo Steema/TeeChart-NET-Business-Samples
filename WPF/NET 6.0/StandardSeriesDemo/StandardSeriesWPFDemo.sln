@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StandardSeriesWPFDemo", "StandardSeriesWPFDemo.csproj", "{43ED9AF4-8C03-46B6-86E8-D7D2D15D3D20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{2020A3E0-CAB0-4965-8FF6-1E7A1DC3CE2F}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeeChart.Business", "..\..\..\..\..\..\..\..\TCROOT\TeeChartForNET\Version 4\Sources\TeeChart.PCL.NET6\Headless\TeeChart\TeeChart.Business.csproj", "{6D240EF0-09ED-4B2C-A421-EFDB7710DAFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeeChart.Business.WPF", "..\..\..\..\..\..\..\..\TCROOT\TeeChartForNET\Version 4\Sources\TeeChart.PCL.NET6\TeeChart.WPF\TeeChart.Business.WPF.csproj", "{5185CCDC-FDFE-4656-8C92-EE202F2B0E5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43ED9AF4-8C03-46B6-86E8-D7D2D15D3D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43ED9AF4-8C03-46B6-86E8-D7D2D15D3D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43ED9AF4-8C03-46B6-86E8-D7D2D15D3D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43ED9AF4-8C03-46B6-86E8-D7D2D15D3D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D240EF0-09ED-4B2C-A421-EFDB7710DAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D240EF0-09ED-4B2C-A421-EFDB7710DAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D240EF0-09ED-4B2C-A421-EFDB7710DAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D240EF0-09ED-4B2C-A421-EFDB7710DAFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5185CCDC-FDFE-4656-8C92-EE202F2B0E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5185CCDC-FDFE-4656-8C92-EE202F2B0E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5185CCDC-FDFE-4656-8C92-EE202F2B0E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5185CCDC-FDFE-4656-8C92-EE202F2B0E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D09D5128-3612-4F26-913E-87364E6065CE}
+	EndGlobalSection
+EndGlobal
