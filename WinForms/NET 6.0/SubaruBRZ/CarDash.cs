@@ -70,7 +70,7 @@ namespace SubaruBRZSimul
       numericGauge2.ValueFormat = "#.0";
 
       numericGauge2.Markers.Add(new Marker("1", 36, Steema.TeeChart.Tools.AnnotationPositions.RightTop,
-                                            StringAlignment.Center, Color.Red, Color.Red));
+                                            Steema.TeeChart.Drawing.StringAlignment.Center, Color.Red, Color.Red));
       numericGauge2.Markers[1].Chart = revChart.Chart;
       numericGauge2.Markers[1].Shape.Font.Italic = true;
       numericGauge2.Markers[1].Shape.Font.Bold = true;
@@ -251,11 +251,11 @@ namespace SubaruBRZSimul
       runCar();
     }
 
-    private void revChart_BeforeDrawSeries(object sender, Steema.TeeChart.Drawing.Graphics3D g)
+    private void revChart_BeforeDrawSeries(object sender, Steema.TeeChart.Drawing.IGraphics3D g)
     {
       if (warningOn) //display rev warning light
       {
-        g.Brush.Image = SubaruBRZSimul.Properties.Resources.redline_warning;
+        g.Brush.Image = new Steema.TeeChart.Drawing.TImage(SubaruBRZSimul.Properties.Resources.redline_warning);
         g.Pen.Transparency = 100;
         g.Rectangle(309, 207, 349, 247);
       }
