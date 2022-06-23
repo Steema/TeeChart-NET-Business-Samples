@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\..\..\TCROOT\TeeChartForNET\Version 4\Sources\TeeChart.PCL.NET6\TeeChart.WPF\TeeChart.Business.WPF.csproj" />
+    <PackageReference Include="Steema.TeeChart.NET.Business" Version="5.2022.5.26" />
   </ItemGroup>
 
   <!--<ItemGroup>
