@@ -1,6 +1,9 @@
-﻿using Steema.TeeChart.WPF;
+﻿using Steema.TeeChart;
+using Steema.TeeChart.Drawing;
+using Steema.TeeChart.WPF;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -8,7 +11,6 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -31,17 +33,17 @@ namespace SubaruBRZWPF
 
     }
 
-    private Steema.TeeChart.WPF.Styles.CircularGauge circularGauge1;
-    private Steema.TeeChart.WPF.Styles.NumericGauge numericGauge1;
-    private Steema.TeeChart.WPF.Styles.NumericGauge numericGauge2;
-    private Steema.TeeChart.WPF.Styles.CircularGauge circularGauge2;
+    private Steema.TeeChart.Styles.CircularGauge circularGauge1;
+    private Steema.TeeChart.Styles.NumericGauge numericGauge1;
+    private Steema.TeeChart.Styles.NumericGauge numericGauge2;
+    private Steema.TeeChart.Styles.CircularGauge circularGauge2;
 
     private void InitializeChart()
     {
-      this.circularGauge1 = new Steema.TeeChart.WPF.Styles.CircularGauge();
-      this.numericGauge1 = new Steema.TeeChart.WPF.Styles.NumericGauge();
-      this.numericGauge2 = new Steema.TeeChart.WPF.Styles.NumericGauge();
-      this.circularGauge2 = new Steema.TeeChart.WPF.Styles.CircularGauge();
+      this.circularGauge1 = new Steema.TeeChart.Styles.CircularGauge();
+      this.numericGauge1 = new Steema.TeeChart.Styles.NumericGauge();
+      this.numericGauge2 = new Steema.TeeChart.Styles.NumericGauge();
+      this.circularGauge2 = new Steema.TeeChart.Styles.CircularGauge();
       this.revChart.Aspect.ColorPaletteIndex = 20;
       this.revChart.Aspect.Elevation = 315;
       this.revChart.Aspect.ElevationFloat = 315D;
@@ -65,7 +67,7 @@ namespace SubaruBRZWPF
       this.revChart.Axes.Left.Grid.DrawEvery = 2;
       this.revChart.Axes.Left.Increment = 1D;
       this.revChart.Axes.Left.Labels.Font.Bold = true;
-      this.revChart.Axes.Left.Labels.Font.Brush.Color = Colors.Red;
+      this.revChart.Axes.Left.Labels.Font.Brush.Color = Color.Red;
       this.revChart.Axes.Left.Labels.Font.Name = "Gill Sans MT";
       this.revChart.Axes.Left.Labels.Font.Size = 36;
       this.revChart.Axes.Left.MinorTickCount = 9;
@@ -85,13 +87,13 @@ namespace SubaruBRZWPF
       this.revChart.Axes.Top.Labels.Font.Brush.Color = Utils.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
       this.revChart.Axes.Top.Labels.Font.Size = 9;
       this.revChart.Panel.Transparent = true;
-      this.revChart.Header.Font.Brush.Color = Colors.Gray;
+      this.revChart.Header.Font.Brush.Color = Color.Gray;
       this.revChart.Header.Font.Size = 12;
       this.revChart.Legend.Font.Brush.Color = Utils.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
       this.revChart.Legend.Font.Size = 9;
       this.revChart.Legend.Shadow.Visible = false;
       this.revChart.Name = "revChart";
-      this.revChart.Panel.Bevel.Outer = Steema.TeeChart.WPF.Drawing.BevelStyles.None;
+      this.revChart.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
       this.revChart.Panel.Brush.Color = Utils.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
       this.revChart.Panel.Brush.Gradient.Visible = false;
       this.revChart.Panel.MarginBottom = 3D;
@@ -104,7 +106,7 @@ namespace SubaruBRZWPF
       this.revChart.TabIndex = 0;
       this.revChart.Walls.Back.Brush.Visible = false;
       this.revChart.Walls.Back.Visible = false;
-      this.revChart.BeforeDrawSeries += new Steema.TeeChart.WPF.PaintChartEventHandler(this.revChart_BeforeDrawSeries);
+      this.revChart.BeforeDrawSeries += new Steema.TeeChart.PaintChartEventHandler(this.revChart_BeforeDrawSeries);
       this.circularGauge1.RedLine.Visible = false;
       this.circularGauge1.GreenLine.Visible = false;
       this.circularGauge1.Center.Brush.Color = Utils.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
@@ -118,7 +120,7 @@ namespace SubaruBRZWPF
       this.circularGauge1.Center.Pen.Width = 2;
       this.circularGauge1.Center.Position = 0;
       this.circularGauge1.Center.SizeDouble = 0D;
-      this.circularGauge1.Center.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.Center.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.Center.Spiralled = false;
       this.circularGauge1.Center.VertSize = 45;
       this.circularGauge1.Center.Visible = true;
@@ -390,11 +392,11 @@ namespace SubaruBRZWPF
       this.circularGauge1.Marks.Font.Brush.Color = Utils.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
       this.circularGauge1.Marks.Pen.Color = Utils.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(138)))), ((int)(((byte)(193)))));
       this.circularGauge1.Marks.Shadow.Visible = false;
-      this.circularGauge1.Marks.TailParams.Align = Steema.TeeChart.WPF.Styles.TailAlignment.Auto;
+      this.circularGauge1.Marks.TailParams.Align = Steema.TeeChart.Styles.TailAlignment.Auto;
       this.circularGauge1.Marks.TailParams.Margin = 0F;
       this.circularGauge1.Marks.TailParams.PointerHeight = 5D;
       this.circularGauge1.Marks.TailParams.PointerWidth = 8D;
-      this.circularGauge1.Marks.TailStyle = Steema.TeeChart.WPF.Styles.MarksTail.WithPointer;
+      this.circularGauge1.Marks.TailStyle = Steema.TeeChart.Styles.MarksTail.WithPointer;
       this.circularGauge1.Maximum = 9D;
       this.circularGauge1.Minimum = 0D;
       this.circularGauge1.MinorTickDistance = 10;
@@ -405,7 +407,7 @@ namespace SubaruBRZWPF
       this.circularGauge1.MinorTicks.Pen.Width = 4;
       this.circularGauge1.MinorTicks.Position = 0;
       this.circularGauge1.MinorTicks.SizeDouble = 0D;
-      this.circularGauge1.MinorTicks.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.MinorTicks.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.MinorTicks.Spiralled = false;
       this.circularGauge1.MinorTicks.VertSize = 1;
       this.circularGauge1.MinorTicks.Visible = true;
@@ -449,7 +451,7 @@ namespace SubaruBRZWPF
       this.circularGauge1.NumericGauge.GreenLine.Brush.Gradient.UseMiddle = false;
       this.circularGauge1.NumericGauge.GreenLine.Position = 0;
       this.circularGauge1.NumericGauge.GreenLine.SizeDouble = 0D;
-      this.circularGauge1.NumericGauge.GreenLine.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.NumericGauge.GreenLine.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.NumericGauge.GreenLine.Spiralled = false;
       this.circularGauge1.NumericGauge.GreenLine.Visible = true;
       this.circularGauge1.NumericGauge.GreenLineEndValue = 70D;
@@ -457,7 +459,7 @@ namespace SubaruBRZWPF
       this.circularGauge1.NumericGauge.Hand.Brush.Color = Utils.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
       this.circularGauge1.NumericGauge.Hand.Position = 0;
       this.circularGauge1.NumericGauge.Hand.SizeDouble = 0D;
-      this.circularGauge1.NumericGauge.Hand.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.NumericGauge.Hand.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.NumericGauge.Hand.Spiralled = false;
       this.circularGauge1.NumericGauge.Hand.Visible = true;
       this.circularGauge1.NumericGauge.Marks.TailParams.Margin = 0F;
@@ -465,28 +467,28 @@ namespace SubaruBRZWPF
       this.circularGauge1.NumericGauge.Marks.TailParams.PointerWidth = 8D;
       this.circularGauge1.NumericGauge.Maximum = double.PositiveInfinity;
       this.circularGauge1.NumericGauge.Minimum = 0D;
-      this.circularGauge1.NumericGauge.MinorTicks.Brush.Color = Colors.Transparent;
+      this.circularGauge1.NumericGauge.MinorTicks.Brush.Color = Color.Transparent;
       this.circularGauge1.NumericGauge.MinorTicks.Position = 0;
       this.circularGauge1.NumericGauge.MinorTicks.SizeDouble = 0D;
-      this.circularGauge1.NumericGauge.MinorTicks.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.NumericGauge.MinorTicks.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.NumericGauge.MinorTicks.Spiralled = false;
       this.circularGauge1.NumericGauge.MinorTicks.Visible = true;
       this.circularGauge1.NumericGauge.OriginalCursor = null;
       this.circularGauge1.NumericGauge.RedLine.Position = 0;
       this.circularGauge1.NumericGauge.RedLine.SizeDouble = 0D;
-      this.circularGauge1.NumericGauge.RedLine.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.NumericGauge.RedLine.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.NumericGauge.RedLine.Spiralled = false;
       this.circularGauge1.NumericGauge.RedLine.Visible = true;
       this.circularGauge1.NumericGauge.RedLineEndValue = 100D;
       this.circularGauge1.NumericGauge.RedLineStartValue = 80D;
       this.circularGauge1.NumericGauge.TextMarker.AutoSize = true;
-      this.circularGauge1.NumericGauge.TextMarker.Callout.ArrowHead = Steema.TeeChart.WPF.Styles.ArrowHeadStyles.None;
-      this.circularGauge1.NumericGauge.TextMarker.Callout.ArrowHeadDirection = Steema.TeeChart.WPF.Styles.ArrowHeadDirection.FromPoint;
+      this.circularGauge1.NumericGauge.TextMarker.Callout.ArrowHead = Steema.TeeChart.Styles.ArrowHeadStyles.None;
+      this.circularGauge1.NumericGauge.TextMarker.Callout.ArrowHeadDirection = Steema.TeeChart.Styles.ArrowHeadDirection.FromPoint;
       this.circularGauge1.NumericGauge.TextMarker.Callout.ArrowHeadSize = 8;
-      this.circularGauge1.NumericGauge.TextMarker.Callout.Brush.Color = Colors.Black;
+      this.circularGauge1.NumericGauge.TextMarker.Callout.Brush.Color = Color.Black;
       this.circularGauge1.NumericGauge.TextMarker.Callout.Distance = 0;
       this.circularGauge1.NumericGauge.TextMarker.Callout.SizeDouble = 0D;
-      this.circularGauge1.NumericGauge.TextMarker.Callout.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.NumericGauge.TextMarker.Callout.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.NumericGauge.TextMarker.Callout.XPosition = 0;
       this.circularGauge1.NumericGauge.TextMarker.Callout.YPosition = 0;
       this.circularGauge1.NumericGauge.TextMarker.Callout.ZPosition = 0;
@@ -498,17 +500,17 @@ namespace SubaruBRZWPF
       this.circularGauge1.NumericGauge.TextMarker.UsePalette = true;
       this.circularGauge1.NumericGauge.Ticks.Position = 0;
       this.circularGauge1.NumericGauge.Ticks.SizeDouble = 0D;
-      this.circularGauge1.NumericGauge.Ticks.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.NumericGauge.Ticks.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.NumericGauge.Ticks.Spiralled = false;
       this.circularGauge1.NumericGauge.Ticks.Visible = true;
       this.circularGauge1.NumericGauge.UnitsMarker.AutoSize = true;
-      this.circularGauge1.NumericGauge.UnitsMarker.Callout.ArrowHead = Steema.TeeChart.WPF.Styles.ArrowHeadStyles.None;
-      this.circularGauge1.NumericGauge.UnitsMarker.Callout.ArrowHeadDirection = Steema.TeeChart.WPF.Styles.ArrowHeadDirection.FromPoint;
+      this.circularGauge1.NumericGauge.UnitsMarker.Callout.ArrowHead = Steema.TeeChart.Styles.ArrowHeadStyles.None;
+      this.circularGauge1.NumericGauge.UnitsMarker.Callout.ArrowHeadDirection = Steema.TeeChart.Styles.ArrowHeadDirection.FromPoint;
       this.circularGauge1.NumericGauge.UnitsMarker.Callout.ArrowHeadSize = 8;
-      this.circularGauge1.NumericGauge.UnitsMarker.Callout.Brush.Color = Colors.Black;
+      this.circularGauge1.NumericGauge.UnitsMarker.Callout.Brush.Color = Color.Black;
       this.circularGauge1.NumericGauge.UnitsMarker.Callout.Distance = 0;
       this.circularGauge1.NumericGauge.UnitsMarker.Callout.SizeDouble = 0D;
-      this.circularGauge1.NumericGauge.UnitsMarker.Callout.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.NumericGauge.UnitsMarker.Callout.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.NumericGauge.UnitsMarker.Callout.XPosition = 0;
       this.circularGauge1.NumericGauge.UnitsMarker.Callout.YPosition = 0;
       this.circularGauge1.NumericGauge.UnitsMarker.Callout.ZPosition = 0;
@@ -521,13 +523,13 @@ namespace SubaruBRZWPF
       this.circularGauge1.NumericGauge.UseExtendedNumRange = false;
       this.circularGauge1.NumericGauge.Value = 0D;
       this.circularGauge1.NumericGauge.ValueMarker.AutoSize = true;
-      this.circularGauge1.NumericGauge.ValueMarker.Callout.ArrowHead = Steema.TeeChart.WPF.Styles.ArrowHeadStyles.None;
-      this.circularGauge1.NumericGauge.ValueMarker.Callout.ArrowHeadDirection = Steema.TeeChart.WPF.Styles.ArrowHeadDirection.FromPoint;
+      this.circularGauge1.NumericGauge.ValueMarker.Callout.ArrowHead = Steema.TeeChart.Styles.ArrowHeadStyles.None;
+      this.circularGauge1.NumericGauge.ValueMarker.Callout.ArrowHeadDirection = Steema.TeeChart.Styles.ArrowHeadDirection.FromPoint;
       this.circularGauge1.NumericGauge.ValueMarker.Callout.ArrowHeadSize = 8;
-      this.circularGauge1.NumericGauge.ValueMarker.Callout.Brush.Color = Colors.Black;
+      this.circularGauge1.NumericGauge.ValueMarker.Callout.Brush.Color = Color.Black;
       this.circularGauge1.NumericGauge.ValueMarker.Callout.Distance = 0;
       this.circularGauge1.NumericGauge.ValueMarker.Callout.SizeDouble = 0D;
-      this.circularGauge1.NumericGauge.ValueMarker.Callout.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.NumericGauge.ValueMarker.Callout.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.NumericGauge.ValueMarker.Callout.XPosition = 0;
       this.circularGauge1.NumericGauge.ValueMarker.Callout.YPosition = 0;
       this.circularGauge1.NumericGauge.ValueMarker.Callout.ZPosition = 0;
@@ -540,14 +542,14 @@ namespace SubaruBRZWPF
       this.circularGauge1.OriginalCursor = null;
       this.circularGauge1.RotateLabels = false;
       this.circularGauge1.RotationAngle = 326;
-      this.circularGauge1.ShowInLegend = false;
-      this.circularGauge1.Ticks.Brush.Color = Colors.Transparent;
+      this.circularGauge1.Legend.Visible = false;
+      this.circularGauge1.Ticks.Brush.Color = Color.Transparent;
       this.circularGauge1.Ticks.Brush.Gradient.Transparency = 100;
       this.circularGauge1.Ticks.Pen.Color = Utils.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
       this.circularGauge1.Ticks.Pen.Width = 2;
       this.circularGauge1.Ticks.Position = 0;
       this.circularGauge1.Ticks.SizeDouble = 0D;
-      this.circularGauge1.Ticks.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge1.Ticks.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge1.Ticks.Spiralled = false;
       this.circularGauge1.Ticks.VertSize = 20;
       this.circularGauge1.Ticks.Visible = true;
@@ -557,7 +559,7 @@ namespace SubaruBRZWPF
       this.circularGauge1.UseExtendedNumRange = false;
       this.circularGauge1.Value = 4.24302631534777D;
       this.circularGauge1.XValues.DataMember = "Angle";
-      this.circularGauge1.XValues.Order = Steema.TeeChart.WPF.Styles.ValueListOrder.Ascending;
+      this.circularGauge1.XValues.Order = Steema.TeeChart.Styles.ValueListOrder.Ascending;
       this.circularGauge1.YValues.DataMember = "Y";
       this.numericGauge1.ValueMarker.Shape.Transparent = true;
       this.numericGauge1.Frame.Visible = false;
@@ -569,7 +571,7 @@ namespace SubaruBRZWPF
       this.numericGauge1.ColorLineEndValues.Add(0D);
       this.numericGauge1.ColorLineStartValues.Add(0D);
       this.numericGauge1.ColorLineStartValues.Add(0D);
-      this.numericGauge1.CustomBounds = new Rect(400, 320, 169, 107);
+      this.numericGauge1.CustomBounds = new System.Drawing.Rectangle(400, 320, 169, 107);
       this.numericGauge1.GaugeColorPalette = new Color[] {
         Utils.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(55)))), ((int)(((byte)(125))))),
         Utils.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(120)))), ((int)(((byte)(200))))),
@@ -578,10 +580,10 @@ namespace SubaruBRZWPF
         Utils.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10))))),
         Utils.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10))))),
         Utils.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(40)))), ((int)(((byte)(40))))),
-        Colors.Transparent,
+        Color.Transparent,
         Utils.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100))))),
         Utils.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100))))),
-        Colors.Transparent,
+        Color.Transparent,
         Utils.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(200)))), ((int)(((byte)(30))))),
         Utils.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(115)))), ((int)(((byte)(60))))),
         Utils.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(115)))), ((int)(((byte)(60))))),
@@ -589,7 +591,7 @@ namespace SubaruBRZWPF
         Utils.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(50)))), ((int)(((byte)(10))))),
         Utils.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130))))),
         Utils.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130))))),
-        Colors.Transparent,
+        Color.Transparent,
         Utils.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30))))),
         Utils.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(30)))), ((int)(((byte)(30))))),
         Utils.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100))))),
@@ -602,7 +604,7 @@ namespace SubaruBRZWPF
 
       this.numericGauge2.ValueMarker.Shape.Transparent = true;
       this.numericGauge2.Frame.Visible = false;
-      this.numericGauge2.TextMarker.Position = Steema.TeeChart.WPF.Tools.AnnotationPositions.RightTop;
+      this.numericGauge2.TextMarker.Position = Steema.TeeChart.Tools.AnnotationPositions.RightTop;
       this.numericGauge2.UnitsMarker.Active = false;
       this.numericGauge2.Color = Utils.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(127)))), ((int)(((byte)(71)))));
       this.numericGauge2.ColorEach = false;
@@ -610,7 +612,7 @@ namespace SubaruBRZWPF
       this.numericGauge2.ColorLineEndValues.Add(0D);
       this.numericGauge2.ColorLineStartValues.Add(0D);
       this.numericGauge2.ColorLineStartValues.Add(0D);
-      this.numericGauge2.CustomBounds = new Rect(310, 497, 150, 135);
+      this.numericGauge2.CustomBounds = new System.Drawing.Rectangle(310, 497, 150, 135);
       this.numericGauge2.Frame.Circled = false;
       this.numericGauge2.GaugeColorPalette = new Color[] {
         Utils.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(55)))), ((int)(((byte)(125))))),
@@ -648,7 +650,7 @@ namespace SubaruBRZWPF
       this.numericGauge2.TextMarker.Shape.Font.Italic = true;
       this.numericGauge2.ValueMarker.Shape.Font.Size = 20;
       this.numericGauge2.ValueMarker.Shape.Font.Italic = true;
-      this.numericGauge2.ValueMarker.TextAlign = TextAlignment.Left;
+      this.numericGauge2.ValueMarker.TextAlign = StringAlignment.Near;
       this.speedChart.Aspect.ColorPaletteIndex = 20;
       this.speedChart.Aspect.Elevation = 315;
       this.speedChart.Aspect.ElevationFloat = 315D;
@@ -684,13 +686,13 @@ namespace SubaruBRZWPF
       this.speedChart.Axes.Top.Labels.Font.Brush.Color = Utils.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
       this.speedChart.Axes.Top.Labels.Font.Size = 9;
       this.speedChart.Panel.Transparent = true;
-      this.speedChart.Header.Font.Brush.Color = Colors.Gray;
+      this.speedChart.Header.Font.Brush.Color = Color.Gray;
       this.speedChart.Header.Font.Size = 12;
       this.speedChart.Legend.Font.Brush.Color = Utils.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
       this.speedChart.Legend.Font.Size = 9;
       this.speedChart.Legend.Shadow.Visible = false;
       this.speedChart.Name = "speedChart";
-      this.speedChart.Panel.Bevel.Outer = Steema.TeeChart.WPF.Drawing.BevelStyles.None;
+      this.speedChart.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
       this.speedChart.Panel.Brush.Color = Utils.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
       this.speedChart.Panel.Brush.Gradient.Visible = false;
       this.speedChart.Series.Add(this.circularGauge2);
@@ -711,7 +713,7 @@ namespace SubaruBRZWPF
       this.circularGauge2.Center.Pen.Width = 2;
       this.circularGauge2.Center.Position = 0;
       this.circularGauge2.Center.SizeDouble = 0D;
-      this.circularGauge2.Center.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.Center.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.Center.Spiralled = false;
       this.circularGauge2.Center.VertSize = 45;
       this.circularGauge2.Center.Visible = true;
@@ -882,18 +884,18 @@ namespace SubaruBRZWPF
       this.circularGauge2.Marks.Font.Brush.Color = Utils.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
       this.circularGauge2.Marks.Pen.Color = Utils.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(138)))), ((int)(((byte)(193)))));
       this.circularGauge2.Marks.Shadow.Visible = false;
-      this.circularGauge2.Marks.TailParams.Align = Steema.TeeChart.WPF.Styles.TailAlignment.Auto;
+      this.circularGauge2.Marks.TailParams.Align = Steema.TeeChart.Styles.TailAlignment.Auto;
       this.circularGauge2.Marks.TailParams.Margin = 0F;
       this.circularGauge2.Marks.TailParams.PointerHeight = 5D;
       this.circularGauge2.Marks.TailParams.PointerWidth = 8D;
-      this.circularGauge2.Marks.TailStyle = Steema.TeeChart.WPF.Styles.MarksTail.WithPointer;
+      this.circularGauge2.Marks.TailStyle = Steema.TeeChart.Styles.MarksTail.WithPointer;
       this.circularGauge2.Maximum = 160D;
       this.circularGauge2.Minimum = 0D;
-      this.circularGauge2.MinorTicks.Brush.Color = Colors.Transparent;
+      this.circularGauge2.MinorTicks.Brush.Color = Color.Transparent;
       this.circularGauge2.MinorTicks.HorizSize = 1;
       this.circularGauge2.MinorTicks.Position = 0;
       this.circularGauge2.MinorTicks.SizeDouble = 0D;
-      this.circularGauge2.MinorTicks.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.MinorTicks.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.MinorTicks.Spiralled = false;
       this.circularGauge2.MinorTicks.VertSize = 1;
       this.circularGauge2.MinorTicks.Visible = true;
@@ -937,7 +939,7 @@ namespace SubaruBRZWPF
       this.circularGauge2.NumericGauge.GreenLine.Brush.Gradient.UseMiddle = false;
       this.circularGauge2.NumericGauge.GreenLine.Position = 0;
       this.circularGauge2.NumericGauge.GreenLine.SizeDouble = 0D;
-      this.circularGauge2.NumericGauge.GreenLine.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.NumericGauge.GreenLine.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.NumericGauge.GreenLine.Spiralled = false;
       this.circularGauge2.NumericGauge.GreenLine.Visible = true;
       this.circularGauge2.NumericGauge.GreenLineEndValue = 70D;
@@ -945,7 +947,7 @@ namespace SubaruBRZWPF
       this.circularGauge2.NumericGauge.Hand.Brush.Color = Utils.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
       this.circularGauge2.NumericGauge.Hand.Position = 0;
       this.circularGauge2.NumericGauge.Hand.SizeDouble = 0D;
-      this.circularGauge2.NumericGauge.Hand.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.NumericGauge.Hand.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.NumericGauge.Hand.Spiralled = false;
       this.circularGauge2.NumericGauge.Hand.Visible = true;
       this.circularGauge2.NumericGauge.Marks.TailParams.Margin = 0F;
@@ -953,28 +955,28 @@ namespace SubaruBRZWPF
       this.circularGauge2.NumericGauge.Marks.TailParams.PointerWidth = 8D;
       this.circularGauge2.NumericGauge.Maximum = double.PositiveInfinity;
       this.circularGauge2.NumericGauge.Minimum = 0D;
-      this.circularGauge2.NumericGauge.MinorTicks.Brush.Color = Colors.Transparent;
+      this.circularGauge2.NumericGauge.MinorTicks.Brush.Color = Color.Transparent;
       this.circularGauge2.NumericGauge.MinorTicks.Position = 0;
       this.circularGauge2.NumericGauge.MinorTicks.SizeDouble = 0D;
-      this.circularGauge2.NumericGauge.MinorTicks.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.NumericGauge.MinorTicks.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.NumericGauge.MinorTicks.Spiralled = false;
       this.circularGauge2.NumericGauge.MinorTicks.Visible = true;
       this.circularGauge2.NumericGauge.OriginalCursor = null;
       this.circularGauge2.NumericGauge.RedLine.Position = 0;
       this.circularGauge2.NumericGauge.RedLine.SizeDouble = 0D;
-      this.circularGauge2.NumericGauge.RedLine.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.NumericGauge.RedLine.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.NumericGauge.RedLine.Spiralled = false;
       this.circularGauge2.NumericGauge.RedLine.Visible = true;
       this.circularGauge2.NumericGauge.RedLineEndValue = 100D;
       this.circularGauge2.NumericGauge.RedLineStartValue = 80D;
       this.circularGauge2.NumericGauge.TextMarker.AutoSize = true;
-      this.circularGauge2.NumericGauge.TextMarker.Callout.ArrowHead = Steema.TeeChart.WPF.Styles.ArrowHeadStyles.None;
-      this.circularGauge2.NumericGauge.TextMarker.Callout.ArrowHeadDirection = Steema.TeeChart.WPF.Styles.ArrowHeadDirection.FromPoint;
+      this.circularGauge2.NumericGauge.TextMarker.Callout.ArrowHead = Steema.TeeChart.Styles.ArrowHeadStyles.None;
+      this.circularGauge2.NumericGauge.TextMarker.Callout.ArrowHeadDirection = Steema.TeeChart.Styles.ArrowHeadDirection.FromPoint;
       this.circularGauge2.NumericGauge.TextMarker.Callout.ArrowHeadSize = 8;
-      this.circularGauge2.NumericGauge.TextMarker.Callout.Brush.Color = Colors.Black;
+      this.circularGauge2.NumericGauge.TextMarker.Callout.Brush.Color = Color.Black;
       this.circularGauge2.NumericGauge.TextMarker.Callout.Distance = 0;
       this.circularGauge2.NumericGauge.TextMarker.Callout.SizeDouble = 0D;
-      this.circularGauge2.NumericGauge.TextMarker.Callout.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.NumericGauge.TextMarker.Callout.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.NumericGauge.TextMarker.Callout.XPosition = 0;
       this.circularGauge2.NumericGauge.TextMarker.Callout.YPosition = 0;
       this.circularGauge2.NumericGauge.TextMarker.Callout.ZPosition = 0;
@@ -986,17 +988,17 @@ namespace SubaruBRZWPF
       this.circularGauge2.NumericGauge.TextMarker.UsePalette = true;
       this.circularGauge2.NumericGauge.Ticks.Position = 0;
       this.circularGauge2.NumericGauge.Ticks.SizeDouble = 0D;
-      this.circularGauge2.NumericGauge.Ticks.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.NumericGauge.Ticks.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.NumericGauge.Ticks.Spiralled = false;
       this.circularGauge2.NumericGauge.Ticks.Visible = true;
       this.circularGauge2.NumericGauge.UnitsMarker.AutoSize = true;
-      this.circularGauge2.NumericGauge.UnitsMarker.Callout.ArrowHead = Steema.TeeChart.WPF.Styles.ArrowHeadStyles.None;
-      this.circularGauge2.NumericGauge.UnitsMarker.Callout.ArrowHeadDirection = Steema.TeeChart.WPF.Styles.ArrowHeadDirection.FromPoint;
+      this.circularGauge2.NumericGauge.UnitsMarker.Callout.ArrowHead = Steema.TeeChart.Styles.ArrowHeadStyles.None;
+      this.circularGauge2.NumericGauge.UnitsMarker.Callout.ArrowHeadDirection = Steema.TeeChart.Styles.ArrowHeadDirection.FromPoint;
       this.circularGauge2.NumericGauge.UnitsMarker.Callout.ArrowHeadSize = 8;
-      this.circularGauge2.NumericGauge.UnitsMarker.Callout.Brush.Color = Colors.Black;
+      this.circularGauge2.NumericGauge.UnitsMarker.Callout.Brush.Color = Color.Black;
       this.circularGauge2.NumericGauge.UnitsMarker.Callout.Distance = 0;
       this.circularGauge2.NumericGauge.UnitsMarker.Callout.SizeDouble = 0D;
-      this.circularGauge2.NumericGauge.UnitsMarker.Callout.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.NumericGauge.UnitsMarker.Callout.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.NumericGauge.UnitsMarker.Callout.XPosition = 0;
       this.circularGauge2.NumericGauge.UnitsMarker.Callout.YPosition = 0;
       this.circularGauge2.NumericGauge.UnitsMarker.Callout.ZPosition = 0;
@@ -1009,13 +1011,13 @@ namespace SubaruBRZWPF
       this.circularGauge2.NumericGauge.UseExtendedNumRange = false;
       this.circularGauge2.NumericGauge.Value = 0D;
       this.circularGauge2.NumericGauge.ValueMarker.AutoSize = true;
-      this.circularGauge2.NumericGauge.ValueMarker.Callout.ArrowHead = Steema.TeeChart.WPF.Styles.ArrowHeadStyles.None;
-      this.circularGauge2.NumericGauge.ValueMarker.Callout.ArrowHeadDirection = Steema.TeeChart.WPF.Styles.ArrowHeadDirection.FromPoint;
+      this.circularGauge2.NumericGauge.ValueMarker.Callout.ArrowHead = Steema.TeeChart.Styles.ArrowHeadStyles.None;
+      this.circularGauge2.NumericGauge.ValueMarker.Callout.ArrowHeadDirection = Steema.TeeChart.Styles.ArrowHeadDirection.FromPoint;
       this.circularGauge2.NumericGauge.ValueMarker.Callout.ArrowHeadSize = 8;
-      this.circularGauge2.NumericGauge.ValueMarker.Callout.Brush.Color = Colors.Black;
+      this.circularGauge2.NumericGauge.ValueMarker.Callout.Brush.Color = Color.Black;
       this.circularGauge2.NumericGauge.ValueMarker.Callout.Distance = 0;
       this.circularGauge2.NumericGauge.ValueMarker.Callout.SizeDouble = 0D;
-      this.circularGauge2.NumericGauge.ValueMarker.Callout.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.NumericGauge.ValueMarker.Callout.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.NumericGauge.ValueMarker.Callout.XPosition = 0;
       this.circularGauge2.NumericGauge.ValueMarker.Callout.YPosition = 0;
       this.circularGauge2.NumericGauge.ValueMarker.Callout.ZPosition = 0;
@@ -1027,12 +1029,12 @@ namespace SubaruBRZWPF
       this.circularGauge2.NumericGauge.ValueMarker.UsePalette = true;
       this.circularGauge2.OriginalCursor = null;
       this.circularGauge2.RotationAngle = 259;
-      this.circularGauge2.ShowInLegend = false;
-      this.circularGauge2.Ticks.Brush.Color = Colors.Transparent;
+      this.circularGauge2.Legend.Visible = false;
+      this.circularGauge2.Ticks.Brush.Color = Color.Transparent;
       this.circularGauge2.Ticks.Brush.Gradient.Transparency = 100;
       this.circularGauge2.Ticks.Position = 0;
       this.circularGauge2.Ticks.SizeDouble = 0D;
-      this.circularGauge2.Ticks.SizeUnits = Steema.TeeChart.WPF.Styles.PointerSizeUnits.Pixels;
+      this.circularGauge2.Ticks.SizeUnits = Steema.TeeChart.Styles.PointerSizeUnits.Pixels;
       this.circularGauge2.Ticks.Spiralled = false;
       this.circularGauge2.Ticks.VertSize = 12;
       this.circularGauge2.Ticks.Visible = true;
@@ -1042,7 +1044,7 @@ namespace SubaruBRZWPF
       this.circularGauge2.UseExtendedNumRange = false;
       this.circularGauge2.Value = 132.31206758521128D;
       this.circularGauge2.XValues.DataMember = "Angle";
-      this.circularGauge2.XValues.Order = Steema.TeeChart.WPF.Styles.ValueListOrder.Ascending;
+      this.circularGauge2.XValues.Order = Steema.TeeChart.Styles.ValueListOrder.Ascending;
       this.circularGauge2.YValues.DataMember = "Y";
     }
 
@@ -1201,11 +1203,11 @@ namespace SubaruBRZWPF
 
     BitmapImage image = new BitmapImage(new Uri("pack://application:,,,/SubaruBRZWPF;component/Resources/redline_warning.png"));
 
-    private void revChart_BeforeDrawSeries(object sender, Steema.TeeChart.WPF.Drawing.Graphics3D g)
+    private void revChart_BeforeDrawSeries(object sender, Steema.TeeChart.Drawing.IGraphics3D g)
     {
       if (warningOn) //display rev warning light
       {
-        g.Draw(306, 198, image);
+        g.Draw(306, 198, new Steema.TeeChart.WPF.Drawing.TImage(image));
       }
     }
   }

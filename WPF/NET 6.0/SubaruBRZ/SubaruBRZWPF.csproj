@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\redline_warning.png" />
+    <None Remove="Resources\subaru_template.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Steema.TeeChart.NET.Business" Version="5.2022.5.26" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\redline_warning.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\subaru_template.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
