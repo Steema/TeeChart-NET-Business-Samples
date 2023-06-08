@@ -1193,7 +1193,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.circularGauge1.NumericGauge.TextMarker.Shape.Shadow.Visible = false;
-      this.circularGauge1.NumericGauge.TextMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.circularGauge1.NumericGauge.TextMarker.UsePalette = true;
       // 
       // 
@@ -1257,7 +1256,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.circularGauge1.NumericGauge.UnitsMarker.Shape.Shadow.Visible = false;
-      this.circularGauge1.NumericGauge.UnitsMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.circularGauge1.NumericGauge.UnitsMarker.UsePalette = true;
       this.circularGauge1.NumericGauge.UseExtendedNumRange = false;
       this.circularGauge1.NumericGauge.Value = 0D;
@@ -1309,7 +1307,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.circularGauge1.NumericGauge.ValueMarker.Shape.Shadow.Visible = false;
-      this.circularGauge1.NumericGauge.ValueMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.circularGauge1.NumericGauge.ValueMarker.UsePalette = true;
       // 
       // 
@@ -1682,7 +1679,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.numericGauge1.TextMarker.Shape.Shadow.Visible = false;
-      this.numericGauge1.TextMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.numericGauge1.TextMarker.UsePalette = true;
       // 
       // 
@@ -1756,7 +1752,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.numericGauge1.UnitsMarker.Shape.Shadow.Visible = false;
-      this.numericGauge1.UnitsMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.numericGauge1.UnitsMarker.UsePalette = true;
       this.numericGauge1.UseExtendedNumRange = false;
       this.numericGauge1.Value = 115.74467476902161D;
@@ -1812,7 +1807,6 @@ namespace SubaruBRZSimul
       // 
       this.numericGauge1.ValueMarker.Shape.Shadow.Visible = false;
       this.numericGauge1.ValueMarker.Text = "115.745";
-      this.numericGauge1.ValueMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.numericGauge1.ValueMarker.UsePalette = true;
       // 
       // 
@@ -2093,7 +2087,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.numericGauge2.TextMarker.Shape.Shadow.Visible = false;
-      this.numericGauge2.TextMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.numericGauge2.TextMarker.UsePalette = true;
       // 
       // 
@@ -2167,7 +2160,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.numericGauge2.UnitsMarker.Shape.Shadow.Visible = false;
-      this.numericGauge2.UnitsMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.numericGauge2.UnitsMarker.UsePalette = true;
       this.numericGauge2.UseExtendedNumRange = false;
       this.numericGauge2.Value = 448.58938635046974D;
@@ -2223,7 +2215,6 @@ namespace SubaruBRZSimul
       // 
       this.numericGauge2.ValueMarker.Shape.Shadow.Visible = false;
       this.numericGauge2.ValueMarker.Text = "448.589";
-      this.numericGauge2.ValueMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.numericGauge2.ValueMarker.UsePalette = true;
       // 
       // 
@@ -3324,7 +3315,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.circularGauge2.NumericGauge.TextMarker.Shape.Shadow.Visible = false;
-      this.circularGauge2.NumericGauge.TextMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.circularGauge2.NumericGauge.TextMarker.UsePalette = true;
       // 
       // 
@@ -3388,7 +3378,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.circularGauge2.NumericGauge.UnitsMarker.Shape.Shadow.Visible = false;
-      this.circularGauge2.NumericGauge.UnitsMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.circularGauge2.NumericGauge.UnitsMarker.UsePalette = true;
       this.circularGauge2.NumericGauge.UseExtendedNumRange = false;
       this.circularGauge2.NumericGauge.Value = 0D;
@@ -3440,7 +3429,6 @@ namespace SubaruBRZSimul
       // 
       // 
       this.circularGauge2.NumericGauge.ValueMarker.Shape.Shadow.Visible = false;
-      this.circularGauge2.NumericGauge.ValueMarker.Type = "Steema.TeeChart.Tools.Marker";
       this.circularGauge2.NumericGauge.ValueMarker.UsePalette = true;
       // 
       // 
