@@ -9,6 +9,11 @@ The TeeChart NET Standard Business Edition is a Nuget based Charting control des
 
 [See demos](https://www.steema.com/demos/net)
 
+### Nuget Package:
+[Nuget: https://www.nuget.org/packages/Steema.TeeChart.NET.Business](https://www.nuget.org/packages/Steema.TeeChart.NET.Business)
+
+<br>
+
 See **TeeChart Pro** for extended functionality including many more series types, functions, tools and maps:
 
 #### TeeChart .NET Pro:
@@ -16,8 +21,6 @@ See **TeeChart Pro** for extended functionality including many more series types
 - [Examples on github](https://github.com/Steema/TeeChart-NET-Pro-Samples)
  
 ### Useful pages
-
-- [Nuget: https://www.nuget.org/packages/Steema.TeeChart.NET.Business](https://www.nuget.org/packages/Steema.TeeChart.NET.Business)
  
 - [License installation 'how-to' Guide](https://www.steema.com/docs/teechart/introdocs/teebusnet.html)
  
