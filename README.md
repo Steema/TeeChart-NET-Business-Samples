@@ -24,3 +24,7 @@ See **TeeChart Pro** for extended functionality including many more series types
 - [Documentation & API Reference](http://www.steema.com/docs/TeeChartNET)
  
 - [License](https://www.steema.com/licensing/net)
+
+<br>
+
+For more information visit [Steema product page](https://www.steema.com/product/net).
