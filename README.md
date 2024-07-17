@@ -9,7 +9,7 @@ For more information visit [https://www.steema.com/product/net](https://www.stee
 
 ![screenshot](https://www.steema.com/uploads/products/line.png ".NET Line Charts")
 
-### Nuget Package:
+### Nuget package
 [Nuget: https://www.nuget.org/packages/Steema.TeeChart.NET.Business](https://www.nuget.org/packages/Steema.TeeChart.NET.Business)
 
 <br>
