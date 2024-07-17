@@ -1,7 +1,7 @@
 # TeeChart for .NET Business
 ## Versatile native .NET Charting and Gauge control 
 
-The TeeChart NET Standard Business Edition is a Nuget based Charting control designed to offer instant chart and gauge capabilities to your NET application. With a useful array of chart types, statistical functions and developer tools, TeeChart is a great charting library for most standard charting requirements. Easy to use with designtime editor and an intuitive programming structure we hope you enjoy working with it. For Winform, NET5.0, NET6.0, NET7.0, NET8.0, WASM, WPF applications. Web applications use TeeChart's Javascript engine at the browser.
+The TeeChart NET Standard Business Edition is a Nuget based Charting control designed to offer instant chart and gauge capabilities to your NET application. With a useful array of chart types, statistical functions and developer tools, TeeChart is a great charting library for most standard charting requirements. Easy to use with designtime editor and an intuitive programming structure we hope you enjoy working with it. For Winform, NET5.0, NET6.0, NET7.0, NET8.0, WASM, WPF applications. Web applications use TeeChart's Javascript engine at the browser.<br>
 For more information visit [https://www.steema.com/product/net](https://www.steema.com/product/net) 
 
 <br>
